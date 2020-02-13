@@ -5,9 +5,6 @@
 body{
     font-size: 15px;
 }
-#container{
-    min-height: 1500px;
-}
 /* Menu */
 menu{
     color: white;
@@ -40,10 +37,10 @@ menu>ul>li>a{
     width: 200px;
     text-align: center;
     text-decoration: none;
-    color: yellowgreen;
+    color: rgb(128, 255, 17);
 }
 menu>ul>li>a:hover{
-    background-color: yellow;
+    background-color: rgb(126, 219, 13);
 }
 /* header */
 header{
@@ -58,27 +55,44 @@ header{
     h1{
         font-size: 10px;
     }
+    main{
+        min-height: 600px;
+    }
 /* Footer */
 footer{
-    display: flex;
     height: 200px;
     background-color: black;
+}
+#footerlists{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-footer ul{
+#footerlists ul{
     list-style-type: none;
     text-align: center;
 }
-footer li{
+#footerlists li{
     padding-top: 10px;
-    color: white;
-    font-size: 1.5em;
+    text-align: center;
 }
-footer>ul>li>a{
-    text-decoration: none;
+#footerlists li a{
     color: grey;
     font-size: 1.0em;
+    text-decoration: none;
+}
+.footerhead{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+footer>p{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+#reacopy{
+    color: darkgreen;
 }
 
