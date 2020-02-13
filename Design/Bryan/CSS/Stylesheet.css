@@ -6,7 +6,7 @@ body{
     font-size: 15px;
 }
 /* Menu */
-menu{
+nav{
     color: white;
     height: 50px;
     background-color: black;
@@ -16,7 +16,7 @@ menu{
     position: sticky;
     top: 0;
 }
-menu>ul{
+nav>ul{
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -27,10 +27,10 @@ menu>ul{
     flex: 1;
     height: 100%;
 }
-menu>ul>li{
+nav>ul>li{
     height: 100%;
 }
-menu>ul>li>a{
+nav>ul>li>a{
     display: block;
     line-height: 50px;
     height: 100%;
@@ -39,7 +39,7 @@ menu>ul>li>a{
     text-decoration: none;
     color: rgb(128, 255, 17);
 }
-menu>ul>li>a:hover{
+nav>ul>li>a:hover{
     background-color: rgb(66, 121, 0);
 }
 /* header */
