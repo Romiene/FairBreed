@@ -95,3 +95,9 @@ footer>p{
 #reacopy{
     color: darkgreen;
 }
+
+/* -- Home pagina -- */
+
+#home {
+    background-color: green;
+}
