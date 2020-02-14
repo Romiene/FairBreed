@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="stylesheet.php">
+	</head>
+	<body>
+		<div id="container">
+			<header></header>
+			<nav></nav>
+			<main>
+				<div id="container-aanmeld">
+                    <h1>Aanmelden</h1>
+                    <form action="/aanmelding.php" method="post">
+                        <label for="kennelnaam">Kennelnaam </label>
+                        <input type="text" id="kennelnaam" name="kennelnaam"> 
+
+                        <label for="naam">Naam </label>
+                        <input type="text" id="naam" name="naam">
+
+                        <label for="wachtwoord">Wachtwoord </label>
+                        <input type="password" id="wachtwoord" name="wachtwoord">
+
+                        <label for="address">address</label>
+                        <input type="text" id="address" name="address">
+
+                        <label for="tel">Telefoon </label>
+                        <input type="tel" id="tel" name="tel">
+
+                        <label for="email">Email </label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="ubn">Ubn </label>
+                        <input type="text" id="ubn" name="ubn">
+
+                        <label for="kvk">Kvk</label>
+                        <input type="text" id="kvk" name="kvk">
+
+                        <label for="foto">upload foto</label>
+                        <input type="file" id="foto" name="foto">
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
+</html>
