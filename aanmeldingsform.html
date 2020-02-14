@@ -12,18 +12,18 @@
 			<main>
 				<div id="container-aanmeld">
                     <h1>Aanmelden</h1>
-                    <form action="/aanmelding.php" method="post">
+                    <form action="http://student57.nl/aanmelding/" method="post">
                         <label for="kennelnaam">Kennelnaam </label>
-                        <input type="text" id="kennelnaam" name="kennelnaam"> 
+                        <input type="text" id="kennelnaam" name="kennelnaam" required> 
 
                         <label for="naam">Contactpersoon </label>
-                        <input type="text" id="naam" name="naam">
+                        <input type="text" id="naam" name="naam" required>
 
                         <label for="wachtwoord">Wachtwoord </label>
-                        <input type="password" id="wachtwoord" name="wachtwoord">
+                        <input type="password" id="wachtwoord" name="wachtwoord" required>
 
                         <label for="wachtwoord">Bevestiging Wachtwoord </label>
-                        <input type="password" id="wachtwoord" name="wachtwoord">
+                        <input type="password" id="wachtwoord" name="wachtwoord" required>
 
                         <label for="address">address</label>
                         <input type="text" id="address" name="address">
@@ -32,13 +32,16 @@
                         <input type="tel" id="tel" name="tel">
 
                         <label for="email">Email </label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
 
                         <label for="ubn">Ubn </label>
                         <input type="text" id="ubn" name="ubn">
 
                         <label for="kvk">Kvk</label>
                         <input type="text" id="kvk" name="kvk">
+
+                        <label for="bio">Bio</label>
+                        <input type="text" id="bio" name="bio" value="Bio van max 250 letters.">
 
                         <label for="foto">upload foto</label>
                         <input type="file" id="foto" name="foto">
