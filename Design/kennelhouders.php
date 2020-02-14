@@ -103,7 +103,7 @@
 					</div>
                 </div>
                 <div class="profiel-kennel-edit">
-                     <form>
+                     <form action="" method="post">
                                       <input type="text" id="kennelnaam" name="kennelnaam" value="<?= $kennelhouder['naam']?>" >
 				    	<fieldset class="kennel-details">
                             <label for="naam">Contact persoon: </label>
@@ -127,7 +127,7 @@
                             <input type="text" id="bio" name="bio" value="<?= $kennelhouder['bio']?>">
 					    	
                         </div>
-                        <input type="submit" value="verander">
+                        <input type="submit" value="verander" name="verander">
                     </form>
                     <section class="kennelhonden">
                         <div class="kennelhonden-ouder">
