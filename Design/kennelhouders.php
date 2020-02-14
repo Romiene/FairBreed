@@ -95,12 +95,71 @@
 						<img src="" height="" width="">
 					</div>
 					<div class="kennel-bio">
+                        <h3>Bio</h3>
 						<p>
 						<?= $kennelhouder['bio']?>
 						
 						</p>
 					</div>
-				</div>
+                </div>
+                <div class="profiel-kennel-edit">
+                     <form>
+                                      <input type="text" id="kennelnaam" name="kennelnaam" value="<?= $kennelhouder['naam']?>" >
+				    	<fieldset class="kennel-details">
+                            <label for="naam">Contact persoon: </label>
+                            <input type="text" id="naam" name="naam" value="<?= $kennelhouder['contact_persoon']?>"> 
+                            <label for="adres">adres: </label> 
+                            <input type="text" id="adres" name="adres" value="<?= $kennelhouder['adres']?>" >
+                            <label for="tel">Tel: </label> 
+                            <input type="tel" id="tel" name="tel" value="<?= $kennelhouder['tel']?>" >
+                            <label for="email">Mail: </label> 
+                            <input type="email" id="email" name="email" value="<?= $kennelhouder['mail']?>" >
+                            <label for="ubn">Ubn: </label> 
+                            <input type="text" id="ubn" name="ubn" value="<?= $kennelhouder['ubn']?>" >
+                            <label for="kvk">Kvk: </label> 
+                            <input type="text" id="kvk" name="kvk" value="<?= $kennelhouder['kvk']?>" >
+				    	</fieldset>
+				    	<div class="profiel-foto">
+				    		<input type="file" id="foto" name="foto">
+				    	</div>
+				    	<div class="kennel-bio">
+
+                            <input type="text" id="bio" name="bio" value="<?= $kennelhouder['bio']?>">
+					    	
+                        </div>
+                        <input type="submit" value="verander">
+                    </form>
+                    <section class="kennelhonden">
+                        <div class="kennelhonden-ouder">
+                            
+                            <!-- dit is hetzelfde als in ouderhonden.html  dus moet nog personlijk gemaakt worden per kennelhouder -->
+                            <div class="ouderhonden-lijst">
+			                	<h2>Ouderhonden</h2> 
+                                <div class="ouderhond">
+					        	    <img src="" height="" width="" class="hond-foto">
+					        	    <section class="ouderhond-info">
+					    	        	<p class="hond-nummer"></p>
+					    	        	<p class="hond-titel"></p>
+					        	    </section>
+				            	</div>
+                            </div>
+                        </div>
+                        <div class="kennelhonden-pup">
+
+                            <!-- Hetzelfde hier als met de ouderhonden -->
+                            <div class="pup-lijst">
+				        	    <h2>Pups</h2>
+					            <div class="pup">
+					            	<img src="" height="" width="" class="pup-foto">
+					            	<section class="pup-info">
+						            	<p class="pup-nummer"></p>
+						            	<p class="pup-titel"></p>
+						            </section>
+					            </div>
+			            	</div>
+                        </div>
+                    </section>
+                </div>
 			</main>
 			<footer></footer>
 		</div>
