@@ -5,7 +5,7 @@
 body{
     font-size: 15px;
 }
-/* nav */
+/* Menu */
 nav{
     color: white;
     height: 50px;
@@ -40,7 +40,7 @@ nav>ul>li>a{
     color: rgb(128, 255, 17);
 }
 nav>ul>li>a:hover{
-    background-color: rgb(126, 219, 13);
+    background-color: rgb(66, 121, 0);
 }
 /* header */
 header{
@@ -78,27 +78,20 @@ footer{
     text-align: center;
 }
 #footerlists li a{
-    color: grey;
+    color: rgb(91, 165, 0);
     font-size: 1.0em;
     text-decoration: none;
 }
 .footerhead{
     text-decoration: none;
-    color: white;
+    color: rgb(128, 255, 17);
     font-size: 1.2em;
 }
 footer>p{
-    color: white;
     text-align: center;
     margin-top: 30px;
+    color: rgb(128, 255, 17);
 }
 #reacopy{
     color: darkgreen;
-}
-
-/* -- Home pagina -- */
-
-#home {
-    background-color: green;
-    
 }
