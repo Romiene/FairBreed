@@ -100,7 +100,10 @@
 						<?= $kennelhouder['bio']?>
 						
 						</p>
-					</div>
+                    </div>
+                    <form id="edit-knop" action="" method="post">
+                        <input type="submit" value="aanpassen" name="aanpassen">
+                    </form>
                 </div>
                 <div class="profiel-kennel-edit">
                      <form action="" method="post">
@@ -146,7 +149,7 @@
                         </div>
                         <div class="kennelhonden-pup">
 
-                            <!-- Hetzelfde hier als met de ouderhonden -->
+                            <!-- Hetzelfde hier als met de ouderhonden maar dan pups -->
                             <div class="pup-lijst">
 				        	    <h2>Pups</h2>
 					            <div class="pup">
