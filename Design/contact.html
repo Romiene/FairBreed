@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="stylesheet.php">
+	</head>
+	<body>
+		<div id="container">
+			<header></header>
+			<nav></nav>
+			<main>
+				<div id="container-contact">
+                    <h1>Contact</h1>
+                    <form action="http://fairbreed.nl/contact/" method="post" >
+                        <label for="naam">Naam </label>
+                        <input type="text" id="naam" name="naam">
+                        <label for="email">Email </label>
+						<input type="email" id="email" name="email" required>
+						<label for="tel">Telefoon </label>
+						<input type="tel" id="tel" name="tel">
+                        <label for="bericht">Je bericht </label>
+                        <input type="text" id="bericht" name="bericht" value="Typ hier uw bericht." required>
+                        <input type="submit" value="Verstuur" name="contact">
+                    </form>
+                </div>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
+</html>
