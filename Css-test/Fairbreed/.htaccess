@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule ^keurmerk_houders/kennels/([0-9\-]+)/$ index.php?page=kennel&submenu=yes&kennel=$1 [L]
+RewriteRule ^keurmerk_houders/([a-z\-]+)/$ index.php?page=$1&submenu=yes [L]
+RewriteRule ^([a-z\-]+)/$ index.php?page=$1
+RewriteRule ^([a-z\-]+)$ index.php?page=$1
+RewriteRule ^([a-z\-]+)/keurmerk_houders/$ index.php?page=$1&submenu=true
+
+
+
+
+
