@@ -1,8 +1,7 @@
 <?php if(isset($_POST['galleryImg'])){
-         $target_dir = "img/";
+        $target_dir = "images/user/";
         $temp = explode(".", $_FILES["fileToUpload"]["name"]);
-        $newfilename = round(microtime(true)) . '.' . end($temp);     
-        
+        $newfilename = round(microtime(true)) . '.' . end($temp);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($newfilename,PATHINFO_EXTENSION));
         // Check if image file is a actual image or fake image
@@ -39,7 +38,7 @@
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],"img/" . $newfilename)) {
                 $filename = "img/" . $newfilename;
-                try{               
+                try{
                include 'database.php';
                $stmt= $dbh->prepare("INSERT INTO img_gallery (src, alt, figcaption) VALUES (:src, :alt, :figcaption)");
                $stmt->bindParam(':src', $filename, PDO::PARAM_STR, 60);
@@ -49,9 +48,8 @@
                header('Location:http://localhost/EindopdrachtPhp/admin/users/');
             }catch (PDOException $e){
             echo '<p>Oeps! Er is iets foutgegaan!</p>';
-            file_put_contents('PDOErrors.txt', $e->getMessage().PHP_EOL, FILE_APPEND); 
-	}
-                header('Location:http://localhost/EindopdrachtPhp/admin/gallery/');                
+            file_put_contents('PDOErrors.txt', $e->getMessage().PHP_EOL, FILE_APPEND);}
+                header('Location:http://localhost/EindopdrachtPhp/admin/gallery/');
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }

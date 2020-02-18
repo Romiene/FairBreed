@@ -1,7 +1,9 @@
 <?php
+  //
+  // SWIFTAMILER FUNCTION
+  //
   require_once '../vendor/autoload.php';
-  //$logger = new /Swift_Plugins_Loggers_ArrayLogger();
-  function notificationNewSubject($title, $fromMail, $fromName, $toMail, $toName) {
+  function swiftmailer($title, $fromMail, $fromName, $toMail, $toName) {
     // Create the Transport
     $transport = (new Swift_SmtpTransport('ssl://smtp.gmail.com', 465))
       ->setUsername('caddymid@gmail.com')
